@@ -183,7 +183,7 @@ TicketButton2:
   ChannelName: "ticket-{username}" # Variables: {total-tickets}, {username}, {user-id}
   RequiredRoles: [""] # Require the user to have a specific role to open a ticket in this category? You can add multiple, leave blank to disable
   Questions: # You can add a max of 5 questions per category! (Remove all questions to disable)
-      - customId: "warRequest" # Must be unique
+    - customId: "warRequest" # Must be unique
       required: true # Is this question required?
       question: "Gang Name"
       style: "Short" # Short, Paragraph
