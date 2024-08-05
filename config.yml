@@ -169,20 +169,25 @@ TicketButton1: # You can't disable the first button!
 
 # Button 2
 TicketButton2:
-  Enabled: false # Enable 2nd category?
-  TicketName: "Report Member" # This will be the button and ticket name/category
+  Enabled: true # Enable 2nd category?
+  TicketName: "Request war" # This will be the button and ticket name/category
   Description: "" # Category description, This only works if SelectMenu is enabled, Leave blank to disable
-  TicketCategoryID: "1269443509598027867" # Channel Category ID
+  TicketCategoryID: "1270006358451814421" # Channel Category ID
   ClosedCategoryID: "" # The category the ticket will be moved to when it gets closed, leave blank to use the current category (only works if ArchiveTickets is enabled)
   TicketMessageTitle: "Support Ticket ({category})" # Use {category} to get the category name for the ticket opened
   TicketMessage: "> Thank you for contacting support.\n> Please describe your report and await a response." # Use {user} to get the user that created the ticket, {createdAt} to get when the ticket was created using a Discord timestamp
-  ButtonEmoji: "<:reportmember:1268587264079036417>" # Leave blank for no emoji
+  ButtonEmoji: "<:war:1270007595305799780>" # Leave blank for no emoji
   ButtonColor: "Red" # Blurple, Gray, Green, Red
-  SupportRoles: ["1269445674655813765"] # Users with these roles can view tickets in this category, You can add multiple roles
+  SupportRoles: ["1270006953766289491"] # Users with these roles can view tickets in this category, You can add multiple roles
   MentionSupportRoles: true # Mention all the Support Roles in new tickets?
   ChannelName: "ticket-{username}" # Variables: {total-tickets}, {username}, {user-id}
   RequiredRoles: [""] # Require the user to have a specific role to open a ticket in this category? You can add multiple, leave blank to disable
   Questions: # You can add a max of 5 questions per category! (Remove all questions to disable)
+      - customId: "warRequest" # Must be unique
+      required: true # Is this question required?
+      question: "Gang Name"
+      style: "Short" # Short, Paragraph
+
 
 # Button 3
 TicketButton3:
